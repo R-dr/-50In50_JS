@@ -28,6 +28,7 @@ body{
   left:-100px;
 
 }
+/* circle is in top left and then rotates what is shown on click */
 .circle{
   background-color:#E63946 ;
   height:200px;
@@ -39,6 +40,7 @@ body{
 .container.show-nav .circle{
 transform: rotate(-70deg)
 }
+/* ^^ rotate bit ^^ */
 
 .circle button{
   cursor:pointer;
@@ -92,7 +94,7 @@ nav ul li i{
   font-size:20px;
   margin-right: 10px;
 }
-
+/* using li + li takes the first and then the second kinda like counting the lis with the css */
 nav ul li + li{
   margin-left:15px;
   transform:translateX(-150%);
@@ -101,6 +103,7 @@ nav ul li + li + li{
   margin-left:15px;
   transform:translateX(-200%);
 }
+/* end county bit */
 .content img{
   max-width: 100%;
   
