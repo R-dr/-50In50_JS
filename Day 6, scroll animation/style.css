@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  overflow-x:hidden;
+}
+
+h1{
+  margin:10px;
+}
+.box{
+  background-color: blueviolet;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height:200px;
+  margin:10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0,0,0,0.3); /* moves it off the screen*/
+ transform: translateX(200%); 
+ transition:transform 0.4s ease ;
+}
+/* selecets only the even ones in the node list */
+.box:nth-of-type(even){
+  transform: translateX(-200%);
+  /* moves the even ones to the left not the right */
+
+}
+
+.box.show{
+  transform: translateX(0); /* brings it back in by setting the trtanslation to 0 which is the default*/
+}
